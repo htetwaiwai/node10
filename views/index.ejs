@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= user %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= user %></h1>
+    <p>Welcome to <%= user  %><p>
+      <a href="/home">Home Page</a><p></p>
+      <% if(user == 'unknown'){%>
+      <a href="/signin">Sign In</a>
+     <% }else{%>
+      <a href="/logout">Log Out</a>
+    
+   <% } %>
+      
+  </body>
+</html>
